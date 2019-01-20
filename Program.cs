@@ -30,11 +30,11 @@ namespace PizzaCostCalculator
                     break;
             }
 
-            if (topp == "Chicken and Fish" | topp == "Sausage" | topp == "Bacon")
+            if (topping == "Chicken and Fish" | topping == "Sausage" | topping == "Bacon")
             {
                 totalCost = totalCost + 7;
             }
-            else if (topp == "Capsicum and Golden corn" | topp == "Onion and mushroom" | topp == "Pepperoni")
+            else if (topping == "Capsicum and Golden corn" | topping == "Onion and mushroom" | topping == "Pepperoni")
             {
                 totalCost = totalCost + 4;
             }
