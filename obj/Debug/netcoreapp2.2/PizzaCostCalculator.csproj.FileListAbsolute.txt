@@ -1,0 +1,11 @@
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\bin\Debug\netcoreapp2.2\PizzaCostCalculator.deps.json
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\bin\Debug\netcoreapp2.2\PizzaCostCalculator.runtimeconfig.json
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\bin\Debug\netcoreapp2.2\PizzaCostCalculator.runtimeconfig.dev.json
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\bin\Debug\netcoreapp2.2\PizzaCostCalculator.dll
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\bin\Debug\netcoreapp2.2\PizzaCostCalculator.pdb
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\obj\Debug\netcoreapp2.2\PizzaCostCalculator.csprojAssemblyReference.cache
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\obj\Debug\netcoreapp2.2\PizzaCostCalculator.csproj.CoreCompileInputs.cache
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\obj\Debug\netcoreapp2.2\PizzaCostCalculator.AssemblyInfoInputs.cache
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\obj\Debug\netcoreapp2.2\PizzaCostCalculator.AssemblyInfo.cs
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\obj\Debug\netcoreapp2.2\PizzaCostCalculator.dll
+C:\Users\S533490\Documents\44663\PizzaCostCalculator\obj\Debug\netcoreapp2.2\PizzaCostCalculator.pdb
