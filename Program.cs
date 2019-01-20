@@ -52,7 +52,7 @@ namespace PizzaCostCalculator
             int toppinoption;
             int cheeseoption;
             decimal PizzaCost;
-            string toppin = "";
+            string toppings = "";
             double tax;
             double totalCost;
             DateTime now = DateTime.Now;
@@ -74,28 +74,27 @@ namespace PizzaCostCalculator
                     Console.WriteLine("\n\t\t 4.Pizza Bagels");
                     baseoption = Convert.ToInt32(Console.ReadLine());
                 } while (baseoption > 5 && baseoption < 0);
-
-                if (baseoption == 1)
+                  
+                switch(baseoption)
                 {
+                    case 1:
                     Console.WriteLine($"\n Your selection is {baseoption}. Flatbread");
                     PizzaBase = "Flatbread";
-                }
-                else if (baseoption == 2)
-                {
+                    break;
+                    case 2:
                     Console.WriteLine($"\n Your selection is {baseoption}. Thin Crust");
                     PizzaBase = "Thin Crust";
-                }
-                else if (baseoption == 3)
-                {
+                    break;
+                    case 3:
                     Console.WriteLine($"\n Your selection is {baseoption}. Sicilian Style");
                     PizzaBase = "Sicilian Style";
-                }
-                else if (baseoption == 4)
-                {
+                    break;
+                    case 4:
                     Console.WriteLine($"\n Your selection is {baseoption}. Pizza Bagels");
                     PizzaBase = "Pizza Bagels";
+                    break;
                 }
-                Console.WriteLine("\n");
+                    Console.WriteLine("\n");
                 do
                 {
                     Console.WriteLine("Would you like to add some toppings?? ");
@@ -105,15 +104,25 @@ namespace PizzaCostCalculator
 
                 } while (toppinoption < 0 || toppinoption > 6);
 
+                switch(toppinoption)
+                {
+                    case 1:
+                    Console.WriteLine($"\n Your selection is {toppinoption}. Capsicum and Golden corn");
+                    toppings = "Flatbread";
+                    break;
+                    case 2:
+                    Console.WriteLine($"\n Your selection is {toppinoption}. Onion and mushroom");
+                    toppings = "Thin Crust";
+                    break;                    
+                }
+
                 if (toppinoption == 1)
                 {
-                    Console.WriteLine($"\n Your selection is {toppinoption}. Capsicum and Golden corn");
-                    toppin = "Flatbread";
+                    
                 }
                 else if (toppinoption == 2)
                 {
-                    Console.WriteLine($"\n Your selection is {toppinoption}. Onion and mushroom");
-                    toppin = "Thin Crust";
+                   
                 }
                 else if (toppinoption == 3)
                 {
