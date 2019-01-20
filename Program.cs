@@ -174,7 +174,7 @@ namespace PizzaCostCalculator
                 Program total = new Program();
                 PizzaCost = total.totCost(PizzaBase, toppin, cheeseType);
                 tax=Convert.ToDouble(0.10m*PizzaCost);
-                totalCost=Convert.ToDouble(PizzaCost)-tax;
+                totalCost=Convert.ToDouble(PizzaCost)+tax;
                 Console.WriteLine("\n*********************************************************");
                 Console.WriteLine("******************Order Information**********************");
                 Console.WriteLine($"Order Date: {now.ToString("dd/MM/yyyy")}");
