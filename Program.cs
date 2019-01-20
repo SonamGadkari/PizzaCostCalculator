@@ -4,7 +4,7 @@ namespace PizzaCostCalculator
 {
     class Program
     {
-        public decimal totCost(string baseV, string topp, string cheese)
+        public decimal totCost(string baseV, string topping, string cheese)
         {
             decimal totalCost = 0.0m;
             if (baseV == "Flatbread")
@@ -106,6 +106,10 @@ namespace PizzaCostCalculator
 
                 switch(toppinoption)
                 {
+                    case 0:
+                    Console.WriteLine($"\n Your selection is {toppinoption}. No toppings");
+                    toppings = "n";
+                    break;
                     case 1:
                     Console.WriteLine($"\n Your selection is {toppinoption}. Capsicum and Golden corn");
                     toppings = "Flatbread";
@@ -113,42 +117,25 @@ namespace PizzaCostCalculator
                     case 2:
                     Console.WriteLine($"\n Your selection is {toppinoption}. Onion and mushroom");
                     toppings = "Thin Crust";
+                    break;   
+                    case 3: 
+                    Console.WriteLine($"\n Your selection is {toppinoption}. Chicken and Fish");
+                    toppings = "Sicilian Style";                
+                    break;
+                    case 4:
+                    Console.WriteLine($"\n Your selection is {toppinoption}. Sausage");
+                    toppings = "Sausage";
+                    break;
+                    case 5:
+                    Console.WriteLine($"\n Your selection is {toppinoption}. Bacon");
+                    toppings = "Bacon";
+                    break;
+                    case 6:
+                    Console.WriteLine($"\n Your selection is {toppinoption}. Pepperoni");
+                    toppings = "Pepperoni";
                     break;                    
                 }
 
-                if (toppinoption == 1)
-                {
-                    
-                }
-                else if (toppinoption == 2)
-                {
-                   
-                }
-                else if (toppinoption == 3)
-                {
-                    Console.WriteLine($"\n Your selection is {toppinoption}. Chicken and Fish");
-                    toppin = "Sicilian Style";
-                }
-                else if (toppinoption == 4)
-                {
-                    Console.WriteLine($"\n Your selection is {toppinoption}. Sausage");
-                    toppin = "Sausage";
-                }
-                else if (toppinoption == 5)
-                {
-                    Console.WriteLine($"\n Your selection is {toppinoption}. Bacon");
-                    toppin = "Bacon";
-                }
-                else if (toppinoption == 6)
-                {
-                    Console.WriteLine($"\n Your selection is {toppinoption}. Pepperoni");
-                    toppin = "Pepperoni";
-                }
-                else if (toppinoption == 0)
-                {
-                    Console.WriteLine($"\n Your selection is {toppinoption}. No toppings");
-                    toppin = "n";
-                }
                 Console.WriteLine("\n");
                 do
                 {
@@ -181,13 +168,13 @@ namespace PizzaCostCalculator
                 }
                 Console.WriteLine("\n");
                 Program total = new Program();
-                PizzaCost = total.totCost(PizzaBase, toppin, cheeseType);
+                PizzaCost = total.totCost(PizzaBase, toppings, cheeseType);
                 tax=Convert.ToDouble(0.10m*PizzaCost);
                 totalCost=Convert.ToDouble(PizzaCost)+tax;
                 Console.WriteLine("\n*********************************************************");
                 Console.WriteLine("******************Order Information**********************");
                 Console.WriteLine($"Order Date: {now.ToString("dd/MM/yyyy")}");
-                Console.WriteLine($"Order : {PizzaBase} Pizza with {cheeseType} topped with {toppin}");
+                Console.WriteLine($"Order : {PizzaBase} Pizza with {cheeseType} topped with {toppings}");
                 Console.WriteLine($"Order total:\t {PizzaCost}$");
                 Console.WriteLine($"Tax levied:\t {tax}$");
                 Console.WriteLine($"Order total:\t {totalCost}$");
