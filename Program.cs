@@ -93,6 +93,9 @@ namespace PizzaCostCalculator
                     Console.WriteLine($"\n Your selection is {baseoption}. Pizza Bagels");
                     PizzaBase = "Pizza Bagels";
                     break;
+                    default:
+                    Console.WriteLine("Invalid Value");
+                    break;
                 }
                     Console.WriteLine("\n");
                 do
