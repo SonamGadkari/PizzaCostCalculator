@@ -55,6 +55,7 @@ namespace PizzaCostCalculator
             string toppings = "";
             double tax;
             double totalCost;
+            char dollar='$';
             DateTime now = DateTime.Now;
             
             do
@@ -178,7 +179,7 @@ namespace PizzaCostCalculator
                 Console.WriteLine("******************Order Information**********************");
                 Console.WriteLine($"Order Date: {now.ToString("dd/MM/yyyy")}");
                 Console.WriteLine($"Order : {PizzaBase} Pizza with {cheeseType} topped with {toppings}");
-                Console.WriteLine($"Order total:\t {PizzaCost}$");
+                Console.WriteLine($"Order total:\t {PizzaCost}{dollar}");
                 Console.WriteLine($"Tax levied:\t {tax}$");
                 Console.WriteLine($"Order total:\t {totalCost}$");
                 Console.WriteLine("*********************************************************");
